@@ -1,0 +1,126 @@
+/*COLORS*/
+/*FONT-WEIGHTS*/
+/*FONT-SIZE*/
+/*radius*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  width: 90%;
+  height: 80%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance-wrapper {
+  width: 100%;
+  height: 18%;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: hsl(10deg, 79%, 65%);
+  color: hsl(33deg, 100%, 98%);
+  border: 1px solid hsl(25deg, 47%, 15%);
+  border-radius: 13px;
+  padding: 1.5em;
+  margin-bottom: 1em;
+}
+.balance-wrapper .balance-items {
+  line-height: 1.5;
+}
+.balance-wrapper img {
+  height: 60px;
+  width: 60px;
+}
+
+.chart-total-wrapper {
+  height: 72%;
+  width: 100%;
+  background-color: hsl(33deg, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  padding: 1.5em;
+  color: hsl(25deg, 47%, 15%);
+}
+
+.chart-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: end;
+  height: 70%;
+  width: 100%;
+}
+.chart-wrapper .bar-chart {
+  padding: 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+.chart-wrapper span {
+  position: relative;
+  font-size: 12px;
+}
+
+.total-wrapper {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding-top: 1.5em;
+  border-top: 2px solid hsl(27deg, 66%, 92%);
+}
+.total-wrapper .last-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.total-wrapper .last-month :nth-child(1) {
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=main.css.map */
