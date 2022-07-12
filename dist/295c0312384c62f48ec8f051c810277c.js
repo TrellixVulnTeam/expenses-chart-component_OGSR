@@ -68,6 +68,6 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({8:[function(require,module,exports) {
+})({3:[function(require,module,exports) {
 const t=document.querySelector(".chart-wrapper"),e=[];fetch("../dist/data.json").then(function(t){return t.json()}).then(function(n){for(let a=0;a<n.length;a++){const s=document.createElement("div");s.classList.add("bar-chart"),t.appendChild(s);const o=Math.ceil(t.offsetWidth/n.length),d=Math.ceil(n[a].amount);s.style.width=o-10+"px",s.style.height=3*d+"px";const c=document.createElement("span");s.appendChild(c),e.push(n[a].day),c.textContent=n[a].day,c.style.top=3*d+10+"px";const i=document.createElement("span");s.appendChild(i),s.addEventListener("mouseover",()=>{i.classList.add("span-amount"),i.textContent="$"+n[a].amount}),s.addEventListener("mouseout",()=>{i.classList.remove("span-amount"),i.textContent=""})}const a=(new Date).toLocaleString("en-GB",{weekday:"short"}).toLowerCase(),s=e.indexOf(a);t.children[s].classList.add("active")});
-},{}]},{},[8])
+},{}]},{},[3])
