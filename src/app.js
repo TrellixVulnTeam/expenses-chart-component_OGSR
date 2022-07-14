@@ -1,7 +1,7 @@
 const chartWrapper = document.querySelector(".chart-wrapper");
 const barChartDayArray = [];
 
-fetch("../dist/data.json")
+fetch("./data.json")
   .then(function (resp) {
     return resp.json();
   })
