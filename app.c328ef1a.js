@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"app.js":[function(require,module,exports) {
 var chartWrapper = document.querySelector(".chart-wrapper");
 var barChartDayArray = [];
-fetch("../dist/data.json").then(function (resp) {
+fetch("./data.json").then(function (resp) {
   return resp.json();
 }).then(function (data) {
   var _loop = function _loop(i) {
@@ -190,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56367" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56432" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
